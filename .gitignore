@@ -1,0 +1,15 @@
+# 忽略大型原始日志与压缩
+*.pcap
+*.pcapng
+*.etl
+*.trace
+*.bin
+*.rawheap
+*.gz
+*.zip
+
+# 保留分析产物（txt/README/REPORT），如需保留压缩包，单独放行
+!analysis/**/README.md
+!analysis/**/REPORT.md
+!analysis/**/*.txt
+!analysis/**/results_bundle.zip
