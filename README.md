@@ -179,6 +179,40 @@ This validates the installation and generates sample outputs you can review.
 - pyyaml >= 6.0
 - python-dateutil >= 2.8.0
 
+## Development
+
+### Running Tests
+
+Install development dependencies and run the test suite:
+
+```bash
+# Install all dependencies
+make install
+
+# Run tests
+make test
+
+# Run sample analysis (for validation)
+make run-samples
+```
+
+### Makefile Targets
+
+- `make install` - Install both runtime and development dependencies
+- `make test` - Run pytest test suite with quiet output
+- `make run-samples` - Execute analysis pipeline on sample data for validation
+
+### Test Coverage
+
+The test suite covers core pipeline functions:
+
+- **Distribution Analysis**: Validates QCI/5QI count and percentage calculations
+- **Mismatch Detection**: Tests mapping violation detection vs missing mappings
+- **Timestamp Parsing**: Verifies ISO8601, epoch seconds, and millisecond format handling
+- **Bearer Consistency**: Checks variability detection and anomaly reporting
+
+Tests use small in-memory DataFrames and don't require external files.
+
 ## License
 
 This analysis pipeline is auto-generated tooling for QoS analysis. Customize as needed for your specific requirements.

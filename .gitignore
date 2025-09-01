@@ -60,4 +60,4 @@ analysis/*/artifacts/
 
 # OS files
 .DS_Store
-Thumbs.db
+Thumbs.dbsamples/output/
