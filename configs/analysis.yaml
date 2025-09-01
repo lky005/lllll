@@ -1,0 +1,41 @@
+# QCI/5QI Analysis Configuration
+# This file contains optional analysis parameters with sensible defaults.
+# All settings are optional - if not provided, built-in defaults will be used.
+
+# Threshold settings for anomaly detection
+thresholds:
+  # Mismatch rate thresholds for entity-level scoring (as percentages)
+  mismatch_rate_warn: 0.05   # 5% - warn threshold for entity mismatch rates
+  mismatch_rate_crit: 0.15   # 15% - critical threshold for entity mismatch rates
+  
+  # Z-score threshold for KPI outlier detection
+  kpi_outlier_zscore: 3.0    # Standard deviations from mean to flag as outlier
+
+# Analysis scope settings
+top_n_entities: 10           # Number of top entities to show in reports
+
+# Time window analysis (in addition to the primary CLI window setting)
+time_windows: ["5min", "15min", "1H"]
+
+# Chart generation settings
+charts:
+  enable_time_series: true        # Generate time series charts for multiple windows
+  enable_kpi_boxplots: true       # Generate boxplot charts for KPI metrics
+  enable_stacked_mismatch: true   # Generate stacked bar charts for mismatch categories
+
+# Advanced analysis features
+features:
+  # Per-entity anomaly scoring
+  entity_scoring: true
+  
+  # Enhanced KPI statistics (percentiles)
+  enhanced_kpi_stats: true
+  
+  # Variability anomaly detection
+  variability_analysis: true
+
+# Notes:
+# - All settings have sensible defaults and are optional
+# - CLI arguments take precedence over config file settings
+# - Remove or comment out any setting to use the built-in default
+# - Thresholds are tunable based on your network's characteristics

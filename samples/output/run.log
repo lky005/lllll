@@ -1,55 +1,24 @@
-2025-09-01 15:06:57,148 - INFO - Loaded mapping with 9 QCI->5QI entries
-2025-09-01 15:06:57,148 - INFO - Starting QCI/5QI analysis on samples
-2025-09-01 15:06:57,149 - INFO - Discovered 2 data files: ['minimal.csv', 'minimal.csv']
-2025-09-01 15:06:57,149 - INFO - Processing file: minimal.csv
-2025-09-01 15:06:57,152 - DEBUG - Normalized columns: ['timestamp', 'qci', '5qi', 'imsi', 'bearer_id', 'throughput', 'latency', 'packet_loss']
-2025-09-01 15:06:57,155 - INFO - Parsed 10/10 timestamps successfully
-2025-09-01 15:06:57,155 - INFO - Processing file: minimal.csv
-2025-09-01 15:06:57,156 - DEBUG - Normalized columns: ['timestamp', 'qci', '5qi', 'imsi', 'bearer_id', 'throughput', 'latency', 'packet_loss']
-2025-09-01 15:06:57,157 - INFO - Parsed 10/10 timestamps successfully
-2025-09-01 15:06:57,158 - INFO - Combined dataset: 20 rows, 9 columns
-2025-09-01 15:06:57,158 - INFO - Computing distributions...
-2025-09-01 15:06:57,162 - INFO - Detecting mismatches...
-2025-09-01 15:06:57,164 - INFO - Detected 2 mismatches out of 20 comparisons (10.00%)
-2025-09-01 15:06:57,164 - INFO - Analyzing bearer consistency...
-2025-09-01 15:06:57,169 - INFO - Detected 1 bearer consistency anomalies
-2025-09-01 15:06:57,169 - INFO - Computing KPI statistics...
-2025-09-01 15:06:57,187 - INFO - Creating charts...
-2025-09-01 15:06:58,302 - INFO - Generating report...
-2025-09-01 15:06:58,303 - INFO - Generated report: samples/output/REPORT.md
-2025-09-01 15:06:58,303 - INFO - Analysis completed successfully!
-2025-09-01 15:21:00,739 - INFO - Loaded mapping with 9 QCI->5QI entries
-2025-09-01 15:21:00,740 - INFO - Starting QCI/5QI analysis on samples
-2025-09-01 15:21:00,740 - INFO - DRY RUN MODE - No output files will be created
-2025-09-01 15:21:37,837 - INFO - Loaded mapping with 9 QCI->5QI entries
-2025-09-01 15:21:37,837 - INFO - Starting QCI/5QI analysis on samples
-2025-09-01 15:21:37,838 - INFO - Discovered 6 data files: ['minimal.csv', 'minimal.csv', 'qci_distribution.csv', 'anomalies_by_bearer.csv', '5qi_distribution.csv', 'mismatches.csv']
-2025-09-01 15:21:37,839 - INFO - Processing file: minimal.csv
-2025-09-01 15:21:37,842 - DEBUG - Normalized columns: ['timestamp', 'qci', '5qi', 'imsi', 'bearer_id', 'throughput', 'latency', 'packet_loss']
-2025-09-01 15:21:37,844 - INFO - Parsed 10/10 timestamps successfully
-2025-09-01 15:21:37,845 - INFO - Processing file: minimal.csv
-2025-09-01 15:21:37,846 - DEBUG - Normalized columns: ['timestamp', 'qci', '5qi', 'imsi', 'bearer_id', 'throughput', 'latency', 'packet_loss']
-2025-09-01 15:21:37,847 - INFO - Parsed 10/10 timestamps successfully
-2025-09-01 15:21:37,847 - INFO - Processing file: qci_distribution.csv
-2025-09-01 15:21:37,848 - DEBUG - Normalized columns: ['qci', 'count', 'percentage']
-2025-09-01 15:21:37,848 - WARNING - No timestamp column found, skipping time-based analysis
-2025-09-01 15:21:37,849 - INFO - Processing file: anomalies_by_bearer.csv
-2025-09-01 15:21:37,850 - DEBUG - Normalized columns: ['bearer_id', 'time_window', 'type', 'unique_5qis', 'row_count']
-2025-09-01 15:21:37,850 - WARNING - No timestamp column found, skipping time-based analysis
-2025-09-01 15:21:37,850 - INFO - Processing file: 5qi_distribution.csv
-2025-09-01 15:21:37,851 - DEBUG - Normalized columns: ['5qi', 'count', 'percentage']
-2025-09-01 15:21:37,851 - WARNING - No timestamp column found, skipping time-based analysis
-2025-09-01 15:21:37,851 - INFO - Processing file: mismatches.csv
-2025-09-01 15:21:37,853 - DEBUG - Normalized columns: ['row_index', 'qci', '5qi', 'expected_5qi', 'imsi', 'bearer_id', 'timestamp']
-2025-09-01 15:21:37,854 - INFO - Parsed 2/2 timestamps successfully
-2025-09-01 15:21:37,857 - INFO - Combined dataset: 41 rows, 17 columns
-2025-09-01 15:21:37,857 - INFO - Computing distributions...
-2025-09-01 15:21:37,860 - INFO - Detecting mismatches...
-2025-09-01 15:21:37,863 - INFO - Detected 4 mismatches out of 22 comparisons (18.18%)
-2025-09-01 15:21:37,863 - INFO - Analyzing bearer consistency...
-2025-09-01 15:21:37,868 - INFO - Detected 1 bearer consistency anomalies
-2025-09-01 15:21:37,868 - INFO - Computing KPI statistics...
-2025-09-01 15:21:37,886 - INFO - Creating charts...
-2025-09-01 15:21:38,986 - INFO - Generating report...
-2025-09-01 15:21:38,987 - INFO - Generated report: samples/output/REPORT.md
-2025-09-01 15:21:38,987 - INFO - Analysis completed successfully!
+2025-09-01 15:34:39,879 - INFO - Loaded mapping with 9 QCI->5QI entries
+2025-09-01 15:34:39,879 - INFO - Starting QCI/5QI analysis on samples
+2025-09-01 15:34:39,880 - INFO - Discovered 2 data files: ['minimal.csv', 'minimal.csv']
+2025-09-01 15:34:39,880 - INFO - Processing file: minimal.csv
+2025-09-01 15:34:39,883 - DEBUG - Normalized columns: ['timestamp', 'qci', '5qi', 'imsi', 'bearer_id', 'throughput', 'latency', 'packet_loss']
+2025-09-01 15:34:39,886 - INFO - Parsed 10/10 timestamps successfully
+2025-09-01 15:34:39,886 - INFO - Processing file: minimal.csv
+2025-09-01 15:34:39,888 - DEBUG - Normalized columns: ['timestamp', 'qci', '5qi', 'imsi', 'bearer_id', 'throughput', 'latency', 'packet_loss']
+2025-09-01 15:34:39,889 - INFO - Parsed 10/10 timestamps successfully
+2025-09-01 15:34:39,889 - INFO - Combined dataset: 20 rows, 9 columns
+2025-09-01 15:34:39,889 - INFO - Computing distributions...
+2025-09-01 15:34:39,893 - INFO - Detecting mismatches...
+2025-09-01 15:34:39,895 - INFO - Detected 2 mismatches out of 20 comparisons (10.00%)
+2025-09-01 15:34:39,895 - INFO - Analyzing bearer consistency...
+2025-09-01 15:34:39,899 - INFO - Detected 1 bearer consistency anomalies
+2025-09-01 15:34:39,900 - INFO - Computing KPI statistics...
+2025-09-01 15:34:40,023 - INFO - Classifying entity anomalies...
+2025-09-01 15:34:40,026 - INFO - Detecting KPI outliers...
+2025-09-01 15:34:40,028 - INFO - Detected 0 KPI outliers
+2025-09-01 15:34:40,028 - INFO - Creating anomalies summary...
+2025-09-01 15:34:40,029 - INFO - Creating charts...
+2025-09-01 15:34:44,761 - INFO - Generating report...
+2025-09-01 15:34:44,763 - INFO - Generated report: samples/output/REPORT.md
+2025-09-01 15:34:44,763 - INFO - Analysis completed successfully!
