@@ -1,8 +1,0 @@
-entity_id,entity_type,mismatch_count,total_comparisons,mismatch_rate,severity
-123456789012345,imsi,2,6,0.3333,CRIT
-234567890123456,imsi,0,4,0.0,OK
-345678901234567,imsi,0,2,0.0,OK
-456789012345678,imsi,0,2,0.0,OK
-567890123456789,imsi,0,2,0.0,OK
-678901234567890,imsi,0,2,0.0,OK
-789012345678901,imsi,0,2,0.0,OK
