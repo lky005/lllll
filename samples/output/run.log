@@ -18,3 +18,35 @@
 2025-09-01 15:06:58,302 - INFO - Generating report...
 2025-09-01 15:06:58,303 - INFO - Generated report: samples/output/REPORT.md
 2025-09-01 15:06:58,303 - INFO - Analysis completed successfully!
+2025-09-01 15:13:17,296 - INFO - Loaded mapping with 9 QCI->5QI entries
+2025-09-01 15:13:17,296 - INFO - Starting QCI/5QI analysis on samples
+2025-09-01 15:13:17,297 - INFO - Discovered 6 data files: ['minimal.csv', 'minimal.csv', 'qci_distribution.csv', 'anomalies_by_bearer.csv', '5qi_distribution.csv', 'mismatches.csv']
+2025-09-01 15:13:17,297 - INFO - Processing file: minimal.csv
+2025-09-01 15:13:17,301 - DEBUG - Normalized columns: ['timestamp', 'qci', '5qi', 'imsi', 'bearer_id', 'throughput', 'latency', 'packet_loss']
+2025-09-01 15:13:17,303 - INFO - Parsed 10/10 timestamps successfully
+2025-09-01 15:13:17,303 - INFO - Processing file: minimal.csv
+2025-09-01 15:13:17,305 - DEBUG - Normalized columns: ['timestamp', 'qci', '5qi', 'imsi', 'bearer_id', 'throughput', 'latency', 'packet_loss']
+2025-09-01 15:13:17,306 - INFO - Parsed 10/10 timestamps successfully
+2025-09-01 15:13:17,306 - INFO - Processing file: qci_distribution.csv
+2025-09-01 15:13:17,307 - DEBUG - Normalized columns: ['qci', 'count', 'percentage']
+2025-09-01 15:13:17,307 - WARNING - No timestamp column found, skipping time-based analysis
+2025-09-01 15:13:17,308 - INFO - Processing file: anomalies_by_bearer.csv
+2025-09-01 15:13:17,309 - DEBUG - Normalized columns: ['bearer_id', 'time_window', 'type', 'unique_5qis', 'row_count']
+2025-09-01 15:13:17,309 - WARNING - No timestamp column found, skipping time-based analysis
+2025-09-01 15:13:17,309 - INFO - Processing file: 5qi_distribution.csv
+2025-09-01 15:13:17,310 - DEBUG - Normalized columns: ['5qi', 'count', 'percentage']
+2025-09-01 15:13:17,310 - WARNING - No timestamp column found, skipping time-based analysis
+2025-09-01 15:13:17,310 - INFO - Processing file: mismatches.csv
+2025-09-01 15:13:17,312 - DEBUG - Normalized columns: ['row_index', 'qci', '5qi', 'expected_5qi', 'imsi', 'bearer_id', 'timestamp']
+2025-09-01 15:13:17,313 - INFO - Parsed 2/2 timestamps successfully
+2025-09-01 15:13:17,316 - INFO - Combined dataset: 41 rows, 17 columns
+2025-09-01 15:13:17,316 - INFO - Computing distributions...
+2025-09-01 15:13:17,319 - INFO - Detecting mismatches...
+2025-09-01 15:13:17,322 - INFO - Detected 4 mismatches out of 22 comparisons (18.18%)
+2025-09-01 15:13:17,322 - INFO - Analyzing bearer consistency...
+2025-09-01 15:13:17,327 - INFO - Detected 1 bearer consistency anomalies
+2025-09-01 15:13:17,327 - INFO - Computing KPI statistics...
+2025-09-01 15:13:17,344 - INFO - Creating charts...
+2025-09-01 15:13:18,430 - INFO - Generating report...
+2025-09-01 15:13:18,431 - INFO - Generated report: samples/output/REPORT.md
+2025-09-01 15:13:18,431 - INFO - Analysis completed successfully!
