@@ -1,0 +1,20 @@
+2025-09-01 15:06:57,148 - INFO - Loaded mapping with 9 QCI->5QI entries
+2025-09-01 15:06:57,148 - INFO - Starting QCI/5QI analysis on samples
+2025-09-01 15:06:57,149 - INFO - Discovered 2 data files: ['minimal.csv', 'minimal.csv']
+2025-09-01 15:06:57,149 - INFO - Processing file: minimal.csv
+2025-09-01 15:06:57,152 - DEBUG - Normalized columns: ['timestamp', 'qci', '5qi', 'imsi', 'bearer_id', 'throughput', 'latency', 'packet_loss']
+2025-09-01 15:06:57,155 - INFO - Parsed 10/10 timestamps successfully
+2025-09-01 15:06:57,155 - INFO - Processing file: minimal.csv
+2025-09-01 15:06:57,156 - DEBUG - Normalized columns: ['timestamp', 'qci', '5qi', 'imsi', 'bearer_id', 'throughput', 'latency', 'packet_loss']
+2025-09-01 15:06:57,157 - INFO - Parsed 10/10 timestamps successfully
+2025-09-01 15:06:57,158 - INFO - Combined dataset: 20 rows, 9 columns
+2025-09-01 15:06:57,158 - INFO - Computing distributions...
+2025-09-01 15:06:57,162 - INFO - Detecting mismatches...
+2025-09-01 15:06:57,164 - INFO - Detected 2 mismatches out of 20 comparisons (10.00%)
+2025-09-01 15:06:57,164 - INFO - Analyzing bearer consistency...
+2025-09-01 15:06:57,169 - INFO - Detected 1 bearer consistency anomalies
+2025-09-01 15:06:57,169 - INFO - Computing KPI statistics...
+2025-09-01 15:06:57,187 - INFO - Creating charts...
+2025-09-01 15:06:58,302 - INFO - Generating report...
+2025-09-01 15:06:58,303 - INFO - Generated report: samples/output/REPORT.md
+2025-09-01 15:06:58,303 - INFO - Analysis completed successfully!

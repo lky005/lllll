@@ -1,0 +1,46 @@
+# QCI ↔ 5QI Mapping Configuration
+# This file defines the mapping between QCI (QoS Class Identifier) and 5QI (5G QoS Identifier)
+# values used for consistency analysis and anomaly detection.
+#
+# Format:
+# - qci_to_5qi: Maps QCI values to their corresponding 5QI value(s)
+# - 5qi_to_qci: Optional reverse mapping for validation
+#
+# Notes:
+# - QCI values are used in 4G/LTE networks
+# - 5QI values are used in 5G NR networks
+# - Some QCI/5QI values may have multiple valid mappings depending on operator policy
+# - Edit this file to match your network operator's specific mapping requirements
+
+qci_to_5qi:
+  "1": [1]    # Conversational voice
+  "2": [2]    # Conversational video (live streaming)
+  "3": [3]    # Real time gaming
+  "4": [4]    # Non-conversational video (buffered streaming)
+  "5": [5]    # IMS signaling
+  "6": [6]    # Video (buffered streaming), TCP-based (e.g., www, email, chat, ftp, p2p file sharing, progressive video, etc.)
+  "7": [7]    # Voice, video (live streaming), interactive gaming
+  "8": [8]    # Video (buffered streaming), TCP-based (e.g., www, email, chat, ftp, p2p file sharing, progressive video, etc.)
+  "9": [9]    # Video (buffered streaming), TCP-based (e.g., www, email, chat, ftp, p2p file sharing, progressive video, etc.)
+
+5qi_to_qci:
+  "1": [1]    # Conversational voice
+  "2": [2]    # Conversational video (live streaming)
+  "3": [3]    # Real time gaming
+  "4": [4]    # Non-conversational video (buffered streaming)
+  "5": [5]    # IMS signaling
+  "6": [6]    # Video (buffered streaming), TCP-based
+  "7": [7]    # Voice, video (live streaming), interactive gaming
+  "8": [8]    # Video (buffered streaming), TCP-based
+  "9": [9]    # Video (buffered streaming), TCP-based
+
+notes: |
+  Default example mapping based on 3GPP standards. Edit as needed per operator/network policy.
+  
+  Standard QCI/5QI characteristics:
+  - QCI/5QI 1: GBR, Real-time, Low latency (Voice)
+  - QCI/5QI 2: GBR, Real-time, Medium latency (Video calls)
+  - QCI/5QI 3: GBR, Real-time, Low latency (Gaming)
+  - QCI/5QI 4: GBR, Non-real-time (Streaming)
+  - QCI/5QI 5: Non-GBR, IMS signaling
+  - QCI/5QI 6-9: Non-GBR, Various priority levels for data services
